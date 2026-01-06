@@ -1,2 +1,2 @@
 II/F:
-	Kisebb számok száma: 2
+	Kisebb számok száma: 1

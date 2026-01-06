@@ -27,8 +27,18 @@ def BG01(lista):
     print("III/C:\n")
     ossz = 0
     i = 0
-    while ossz < len(lista):
+    while i < len(lista):
         if lista[i].cikkszam == "BG01":
             ossz += 1
         i += 1
-        
+    print(f"\tA „BG01”  típushoz tartozó megrendelések összes mennyisége: {ossz}.")
+    
+def legnagyobb(lista):
+    print("III/D:\n")
+    legnagyobb = lista[0]
+    i = 1 #második autótól kezdjük
+    while i < len(lista):
+        if lista[i].mennyiseg > legnagyobb.mennyiseg:
+            legnagyobb = lista[i]
+        i += 1
+    print(f"\tA legnagyobb mennyiségű rendelési tételhez tartozó rendelési szám: {legnagyobb.szama}.")
